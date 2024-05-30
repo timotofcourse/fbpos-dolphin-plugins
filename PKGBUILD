@@ -10,6 +10,9 @@ depends=('ffmpeg' 'konsole' 'imagemagick')
 source=(
   "convert_to_mp4.sh"
   "convert_to_mov.sh"
+  "convert-png.sh"
+  "convert-jpg.sh"
+  "convert-webp.sh"
   "convert_to_mp4.desktop"
 )
 sha256sums=(
