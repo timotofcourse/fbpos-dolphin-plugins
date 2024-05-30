@@ -3,27 +3,23 @@
 # List of video extensions to convert
 video_extensions=("avi" "mkv" "flv" "mov" "wmv" "webm")
 
-# Function to check if an array contains a value
-contains() {
-  local array="$1[@]"
-  local seeking=$2
-  local in=1
-  for element in "${!array}"; do
-    if [[ "$element" == "$seeking" ]]; then
-      in=0
-      break
+# Function to check if a file has a valid video extension
+has_valid_extension() {
+  local file="$1"
+  local extension="${file##*.}"
+  
+  for ext in "${video_extensions[@]}"; do
+    if [[ "$extension" == "$ext" ]]; then
+      return 0
     fi
   done
-  return $in
+  return 1
 }
 
 # Iterate over all files in the specified directory
 for file in "$1"/*; do
-  # Get the file extension
-  extension="${file##*.}"
-
-  # Check if the file has one of the video extensions and is not already mp4
-  if contains video_extensions "$extension" && [[ "$extension" != "mp4" ]]; then
+  # Check if the file has a valid video extension and is not already mp4
+  if has_valid_extension "$file" && [[ "${file##*.}" != "mp4" ]]; then
     # Define the output filename
     output_file="${file%.*}.mp4"
     
