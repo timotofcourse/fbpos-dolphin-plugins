@@ -19,5 +19,8 @@ sha256sums=(
 package() {
   install -Dm755 "$srcdir/convert-mp4.sh" "$pkgdir/usr/bin/convert-mp4"
   install -Dm755 "$srcdir/convert-mov.sh" "$pkgdir/usr/bin/convert-mov"
+  install -Dm755 "$srcdir/convert-png.sh" "$pkgdir/usr/bin/convert-png"
+  install -Dm755 "$srcdir/convert-jpg.sh" "$pkgdir/usr/bin/convert-jpg"
+  install -Dm755 "$srcdir/convert-webp.sh" "$pkgdir/usr/bin/convert-webp"
   install -Dm644 "$srcdir/convert-mp4.desktop" "$pkgdir/usr/share/kservices5/ServiceMenus/convert-mp4.desktop"
 }

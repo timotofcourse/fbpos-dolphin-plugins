@@ -13,3 +13,18 @@ Exec=konsole --noclose -e bash -c '/usr/bin/convert-mp4 "%f"'
 Name=Convert to MOV
 Icon=video-x-generic
 Exec=konsole --noclose -e bash -c '/usr/bin/convert-mov "%f"'
+
+[Desktop Action convert_to_png]
+Name=Convert to PNG
+Icon=image-x-generic
+Exec=konsole --noclose -e bash -c '/usr/bin/convert-png "%f"'
+
+[Desktop Action convert_to_jpg]
+Name=Convert to JPG
+Icon=image-x-generic
+Exec=konsole --noclose -e bash -c '/usr/bin/convert-jpg "%f"'
+
+[Desktop Action convert_to_webp]
+Name=Convert to WEBP
+Icon=image-x-generic
+Exec=konsole --noclose -e bash -c '/usr/bin/convert-webp "%f"'
