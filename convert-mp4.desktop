@@ -2,7 +2,7 @@
 Type=Service
 ServiceTypes=KonqPopupMenu/Plugin
 MimeType=inode/directory
-Actions=convert_to_mp4;convert_to_mov
+Actions=convert_to_mp4;convert_to_mov;convert_to_png;convert_to_jpg;convert_to_webp
 
 [Desktop Action convert_to_mp4]
 Name=Convert to MP4
