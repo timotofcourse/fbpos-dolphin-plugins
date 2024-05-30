@@ -7,9 +7,9 @@ Actions=convert_to_mp4;convert_to_mov
 [Desktop Action convert_to_mp4]
 Name=Convert to MP4
 Icon=video-x-generic
-Exec=konsole --noclose -e bash -c '/usr/bin/convert-mp4.sh "%f"'
+Exec=konsole --noclose -e bash -c '/usr/bin/convert-mp4 "%f"'
 
 [Desktop Action convert_to_mov]
 Name=Convert to MOV
 Icon=video-x-generic
-Exec=konsole --noclose -e bash -c '/usr/bin/convert-mov.sh "%f"'
+Exec=konsole --noclose -e bash -c '/usr/bin/convert-mov "%f"'
