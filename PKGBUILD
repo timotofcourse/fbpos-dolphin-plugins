@@ -8,12 +8,12 @@ url="github.com/timot_of_course"
 license=('GPL')
 depends=('ffmpeg' 'konsole' 'imagemagick')
 source=(
-  "convert_to_mp4.sh"
-  "convert_to_mov.sh"
+  "convert-mp4.sh"
+  "convert-mov.sh"
   "convert-png.sh"
   "convert-jpg.sh"
   "convert-webp.sh"
-  "convert_to_mp4.desktop"
+  "convert-mp4.desktop"
 )
 sha256sums=(
 
