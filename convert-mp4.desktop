@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory
+Actions=convert_to_mp4
+
+[Desktop Action convert_to_mp4]
+Name=Convert to MP4
+Icon=video-x-generic
+Exec=konsole --noclose -e bash -c '/usr/bin/convert_to_mp4.sh "%f"'
